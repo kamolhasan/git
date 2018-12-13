@@ -1,9 +1,10 @@
-# GIT CheatSheet
+#----------------GIT CheatSheet---------------
 
 #### Git configuration
    + `git config --global user.name "Full Name"` //set name
    + `git config --global user.email "you@appscode.com"`    // set email
    + 'git config --list'    //view configuration 
+--------------------------------------------------
 
 #### Git initialization 
    + `cd /home/user/my_project`     //open existing directory
@@ -13,22 +14,30 @@
    + `git add .`        //add all files or stage all file
    + `git commit -m 'C1:master msg'`    //commit updates
    
-   
- #### Cloning an Existing Repository
+---------------------------------------------------------------   
+#### Cloning an Existing Repository
    + `git clone https://github.com/user/project_name`  // clone repository from github
    +  `git clone https://github.com/user/project_name  new_name`   // clone repo with new name
+
+--------------------------------------------------
    
- #### Check Corrent Status
+#### Check Corrent Status
    + `git status`   // check current status or notice changes 
    + `git status -s` // short status
-   
- #### Viewing Changes
+
+
+--------------------------------------------------------------   
+#### Viewing Changes
    + `git diff`     // compare with last commit (not staged)
    + `git diff --staged`    // compare with last commit (staged)
    + `git diff  <commitHash1> <commitHash2>` //compare changes in two commits
    +  `git show <commitHash>`       // changes in a single commit 
-   
- #### Create and Delete File
+---------------------------------------------------   
+#### Create and Delete File
    + `git add fileName.type`        //add file to git
    + `git rm fileName.type`         //remove file from git
-   
+----------------------------------------------------
+#### Tags
++ `git tag -a <version> -m "msg"`  :add version to last commit
++ `git push origin --tags`         :push all tags to repo
++ `git push origin <tag>`          :push specific version to repo
