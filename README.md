@@ -1,4 +1,4 @@
-#----------------GIT CheatSheet---------------
+# ----------------GIT CheatSheet---------------
 
 #### Git configuration
    + `git config --global user.name "Full Name"` //set name
